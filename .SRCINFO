@@ -1,0 +1,26 @@
+pkgbase = lldb8
+	pkgdesc = Next generation, high-performance debugger (8.x)
+	pkgver = 8.0.1
+	pkgrel = 1
+	url = https://lldb.llvm.org/
+	arch = x86_64
+	license = custom:University of Illinois/NCSA Open Source License
+	makedepends = llvm8
+	makedepends = cmake
+	makedepends = ninja
+	makedepends = swig
+	depends = llvm8-libs
+	depends = clang8
+	depends = python2
+	depends = python2-six
+	provides = lldb=8.0.1
+	conflicts = lldb
+	source = https://github.com/llvm/llvm-project/releases/download/llvmorg-8.0.1/lldb-8.0.1.src.tar.xz
+	source = swig4.patch
+	validpgpkeys = B6C8F98282B944E3B0D5C2530FC3042E345AD05D
+	validpgpkeys = 474E22316ABF4785A88C6E8EA2C794A986419D8A
+	sha256sums = e8a79baa6d11dd0650ab4a1b479f699dfad82af627cbbcd49fa6f2dc14e131d7
+	sha256sums = cc5584b8a1f1ea8df23b91915b275aa38ca38ddb6bba4a86d8231210e9cbd06f
+
+pkgname = lldb8
+
